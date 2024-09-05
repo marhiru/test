@@ -3,51 +3,66 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
-    justify-content: space-between; /* Garante que os itens estejam nos extremos e no centro */
-    align-items: center; /* Centraliza verticalmente os itens */
-    background-color: #ffffff; /* Cor de fundo do navbar */
+    justify-content: space-between;
+    /* Garante que os itens estejam nos extremos e no centro */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+    background-color: #ffffff;
+    /* Cor de fundo do navbar */
     padding-left: 10px;
 }
 
-.menu-icon, .logo-right, .logo-central {
-    flex-grow: 0; /* Não permite que os itens cresçam */
-    flex-shrink: 0; /* Não permite que os itens encolham */
+.menu-icon,
+.logo-right,
+.logo-central {
+    flex-grow: 0;
+    /* Não permite que os itens cresçam */
+    flex-shrink: 0;
+    /* Não permite que os itens encolham */
 }
 
-.menu-icon, .logo-right {
-    margin: 0; /* Remove margens para que fiquem nos extremos */
+.menu-icon,
+.logo-right {
+    margin: 0;
+    /* Remove margens para que fiquem nos extremos */
 }
 
 .logo-central {
-    flex-grow: 1; /* Permite que a logo central cresça e ocupe todo o espaço restante */
-    text-align: center; /* Centraliza a logo no espaço disponível */
+    flex-grow: 1;
+    /* Permite que a logo central cresça e ocupe todo o espaço restante */
+    text-align: center;
+    /* Centraliza a logo no espaço disponível */
 }
 
 .material-symbols-outlined {
-    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    font-size: 24px;
+    /* Ajuste o tamanho do ícone conforme necessário */
 }
 
 .material-symbols-outlined2 {
-    font-size: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+    font-size: 30px;
+    /* Ajuste o tamanho do ícone conforme necessário */
 }
 
-.logo-central img, .logo-right img {
-    height: 4vh; /* Ajuste a altura conforme necessário */
+.logo-central img,
+.logo-right img {
+    height: 2vh;
+    /* Ajuste a altura conforme necessário */
 }
 
 
 
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 
@@ -62,7 +77,7 @@ body {
 .bracelet-item {
     width: 44%;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
     border-radius: 10px;
@@ -90,7 +105,7 @@ body {
 }
 
 .bracelet-item:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -107,7 +122,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-left: 5%;
-    margin-right: 5%; /* Adicione margem à direita para que o ">" não fique colado na borda */
+    margin-right: 5%;
+    /* Adicione margem à direita para que o ">" não fique colado na borda */
     margin-bottom: 15px;
     font-family: 'GellixMedium';
 }
@@ -175,6 +191,44 @@ body {
     font-family: 'GellixRegular';
 }
 
+.coupon-btn {
+    display: inline-flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #417f39; /* Cor do texto e borda (tom de vermelho alaranjado) */
+    background-color: rgba(148, 237, 136, 0.2); /* Fundo com opacidade de 20% */
+    border: 2px dashed #417f39; /* Borda dashed da mesma cor do texto */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animação suave */
+  }
+  
+  .coupon-btn i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+  }
+  #copyMessage {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .coupon-btn:hover {
+    background-color: rgba(148, 237, 136, 0.3); /* Fundo um pouco mais opaco ao hover */
+    border: 2px solid #417f39;
+    /* transform: scale(1.05); Leve efeito de zoom ao passar o mouse */
+    border: transparent;
+}
+
+.coupon-btn:active {
+    border: transparent;
+    color:#fff;
+    background-color: rgb(81, 196, 66); /* Fundo um pouco mais opaco ao hover */
+    /* transform: scale(0.98); Efeito de "pressionado" ao clicar */
+  }
+
 .code {
     font-family: 'GellixRegular';
     text-align: center;
@@ -188,26 +242,34 @@ body {
 .sizes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Centraliza os botões e mantém espaço entre eles */
-    max-width: 500px; /* Largura máxima do contêiner para alinhar os botões corretamente */
-    margin: auto; /* Centraliza o contêiner na página */
+    justify-content: space-around;
+    /* Centraliza os botões e mantém espaço entre eles */
+    max-width: 500px;
+    /* Largura máxima do contêiner para alinhar os botões corretamente */
+    margin: auto;
+    /* Centraliza o contêiner na página */
 }
 
 .size-btn {
-    padding: 10px 10px; /* Ajusta o padding para melhorar a apresentação */
-    margin: 5px; /* Mantém uma margem entre os botões */
+    padding: 10px 10px;
+    /* Ajusta o padding para melhorar a apresentação */
+    margin: 5px;
+    /* Mantém uma margem entre os botões */
     background-color: #ffffff;
     border: 2px solid #ddd;
     color: #171717;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     border-radius: 15px;
-    flex-basis: calc(20% - 10px); /* Calcula a largura de cada botão menos a margem */
-    text-align: center; /* Centraliza o texto dentro do botão */
+    flex-basis: calc(20% - 10px);
+    /* Calcula a largura de cada botão menos a margem */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
     font-family: 'GellixMedium';
 }
 
-.size-btn:hover, .size-btn.active {
+.size-btn:hover,
+.size-btn.active {
     background-color: #fff8f4;
     border-color: #FEEDE4;
 }
@@ -433,10 +495,11 @@ body {
 }
 
 .old-price {
+    display: flex;
     text-decoration: line-through;
     color: #999;
     font-size: 14px;
-    padding-top:15px;
+    padding-top: 15px;
     font-family: 'GellixRegular';
 }
 
@@ -444,15 +507,17 @@ body {
     text-decoration: line-through;
     color: #999;
     font-size: 18px;
-    padding-top:15px;
+    padding-top: 15px;
     font-family: 'GellixRegular';
 }
+
 
 .new-price {
     font-size: 22px;
     color: #333;
     font-family: 'GellixSemiBold';
 }
+
 .new-price2 {
     font-size: 32px;
     color: #333;
@@ -480,7 +545,8 @@ body {
 
 .free-shipping-container {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
 }
 
 .free-shipping {
@@ -488,20 +554,23 @@ body {
     color: #4caf50;
     display: flex;
     padding-top: 3px;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
 }
 
 .free-shipping2 {
     font-size: 18px;
     color: #4caf50;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
     margin-top: 10px;
 }
 
 .material-symbols-outlined {
     font-size: 14px;
-    margin: 0 2px; /* Espaamento entre o texto e o ícone */
+    margin: 0 2px;
+    /* Espaamento entre o texto e o ícone */
 }
 
 .full-icon {
@@ -775,7 +844,8 @@ p {
     margin-top: 10px;
 }
 
-.like-button, .dislike-button {
+.like-button,
+.dislike-button {
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -787,7 +857,8 @@ p {
     color: #333;
 }
 
-.like-button .material-symbols-outlined, .dislike-button .material-symbols-outlined {
+.like-button .material-symbols-outlined,
+.dislike-button .material-symbols-outlined {
     font-size: 20px;
     margin-right: 5px;
 }
@@ -816,14 +887,15 @@ p {
 
 
 .promocao {
-    width: 90%; margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
     display: block;
     margin-top: 30px;
     border-radius: 10px;
     padding-bottom: 20px;
     padding-top: 1px;
     background-color: rgb(240, 239, 239);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .promotitle {
